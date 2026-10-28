@@ -1,0 +1,13 @@
+[project]
+name = "mcp-cours"
+version = "0.1.0"
+description = "Serveur + client MCP du cours 'Introduction to Model Context Protocol' (Claude Academy)"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.30,<2",
+    "anthropic>=0.40",
+]
+
+# Ce dossier n'est PAS un package Python installable.
+[tool.uv]
+package = false
